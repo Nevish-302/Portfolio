@@ -15,7 +15,7 @@ export default function Navbar()
             </div>
         <div className="nav-logo text white">
             <img src={logo} className="nav-logo-image" /> 
-            Shiven
+            Shiven 
         </div>
         <div className="nav-buttons">
             <div className="nav-button text"> <span className="purple">#</span>home</div>
