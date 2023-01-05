@@ -12,13 +12,11 @@ export default function LandingPage ()
 {
     return (
         <>
-        <Navbar />
         <Intro />
         <Projects />
         <Skills />
         <About />
         <Contacts />
-        <Footer />
         </>
     )
 }

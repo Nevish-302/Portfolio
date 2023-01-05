@@ -7,7 +7,6 @@ import image from '../../assets/images/Intro/skills.png'
 export default function Skills() 
 {
     const skills = Data.data.map(cat => <Skill data = {cat} />)
-    
     return (
         <div className="lp-skills">
             <div className="heading">
@@ -15,7 +14,6 @@ export default function Skills()
                 <span className="purple">#</span>skills
                 </div>
                 <div className="line"></div>
-                <div className="white text view-all"> View all ~~~{`>`} </div>
             </div>
             <div className="skills-main">
                 <img src={image} className="skills-image" />

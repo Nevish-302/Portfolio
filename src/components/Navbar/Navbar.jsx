@@ -3,6 +3,7 @@ import './Navbar.css'
 import github from '../../assets/images/Intro/Github.svg'
 import linkedin from '../../assets/images/Intro/Linkedin.png'
 import logo from '../../assets/images/logi-white.png'
+import { Link } from "react-router-dom";
 
 export default function Navbar()
 {
@@ -10,18 +11,18 @@ export default function Navbar()
         <div className="navbar">
             <div className="nav-vbar">
                 <div className="vline"></div>
-                <a href=""><img src={github} className="nav-image" /></a>
-                <a href=""><img src={linkedin} className="nav-image" /></a>
+                <a href="https://github.com/Nevish-302"><img src={github} className="nav-image" /></a>
+                <a href="https://www.linkedin.com/in/shiven-upadhyay-9834bb100/"><img src={linkedin} className="nav-image" /></a>
             </div>
         <div className="nav-logo text white">
             <img src={logo} className="nav-logo-image" /> 
             Shiven 
         </div>
         <div className="nav-buttons">
-            <div className="nav-button text"> <span className="purple">#</span>home</div>
-            <div className="nav-button text"> <span className="purple">#</span>works</div>
-            <div className="nav-button text"> <span className="purple">#</span>about-me</div>
-            <div className="nav-button text"> <span className="purple">#</span>contact</div>
+            <Link to=''><div className="nav-button text"><span className="purple">#</span>home</div></Link>
+            <Link to='/projects'><div className="nav-button text"><span className="purple">#</span>works</div></Link>
+            <Link to='/about'><div className="nav-button text"><span className="purple">#</span>about-me</div></Link>
+            <Link to='/contacts'><div className="nav-button text"><span className="purple">#</span>contact</div></Link>
         </div>
         </div>
     )
