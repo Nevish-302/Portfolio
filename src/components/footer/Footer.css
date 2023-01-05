@@ -1,0 +1,35 @@
+.footer {
+    position: relative;
+    margin-top: auto;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.footer-about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    justify-content: left;
+    margin-right: auto;
+    width: 30rem;
+}
+.HR {
+    margin-top: 5rem;
+    width: 100%;
+}
+.copyright {
+    text-align: center;
+}
+.footer-name {
+    margin-bottom: .5rem;
+}
+.foot-email {
+    position: relative;
+    top:-1rem;
+}
+.footer-logo-image {
+    position: relative;
+    top: .2rem;
+    height: 2rem;
+}

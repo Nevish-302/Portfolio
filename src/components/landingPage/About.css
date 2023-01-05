@@ -1,0 +1,21 @@
+.lp-about {
+    margin-top: 5rem;
+}
+.about-main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.about-image {
+    width: 20rem;
+}
+.about-text {
+    width: 30rem;
+    text-align: left;
+    margin-top: 5rem;
+}
+.read-more {
+    border: 1px solid #C778DD;
+    display: block;
+    margin-top: 2rem;
+}

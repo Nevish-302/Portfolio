@@ -1,0 +1,10 @@
+.lp-projects {
+    margin-top: 5rem;
+}
+
+.project-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: space-around;
+}

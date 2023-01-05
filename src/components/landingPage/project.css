@@ -1,0 +1,27 @@
+.project {
+    text-align: left;
+    width: 25rem;
+    margin-bottom: 1rem;
+}
+.project-button {
+    border: 1px solid #C778DD;
+    width: 40%;
+    margin-right: 1rem;
+}
+.project-image {
+    display:block;
+    outline : 1px solid #ABB2BF;
+    width: 25rem;
+}
+.project-name {
+    margin-bottom: 1rem;
+}
+.project-desc {
+    margin-bottom: 1rem;
+}
+.project-about {
+    padding: 1rem;
+}
+.project-buttons {
+    display: flex;
+}

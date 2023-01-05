@@ -1,0 +1,16 @@
+.lp-skills {
+    margin-top: 5rem;
+}
+.skills-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
+}
+.skills-main {
+    margin-top: 2rem;
+    display: flex;
+}
+.skills-image {
+    width: 30%;
+}
