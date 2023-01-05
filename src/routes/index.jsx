@@ -2,7 +2,7 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 import Root from '../components/root/index';
 import Error404 from '../components/404/index';
-import LandingPage from '../components/LandingPage/LandingPage';
+import LandingPage from '../components/landingPage/LandingPage';
 
 export default function Routes() {
     const routes = createBrowserRouter([{
