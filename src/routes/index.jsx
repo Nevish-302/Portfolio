@@ -7,6 +7,7 @@ import LandingPage from '../components/LandingPage/LandingPage';
 export default function Routes() {
     const routes = createBrowserRouter([{
         path: "/", 
+        errorElement : <Error404 />,
         element : <Root />, 
         children : [
             {
@@ -23,5 +24,3 @@ export default function Routes() {
         </>
     );
 }
-
-// add errorElement : <Error404 />, to / path
