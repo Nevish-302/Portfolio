@@ -20,5 +20,6 @@
 }
 .skills-box {
     width: 90vw;
+    justify-content: center;
 }
 }
