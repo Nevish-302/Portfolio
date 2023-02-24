@@ -25,3 +25,11 @@
 .project-buttons {
     display: flex;
 }
+@media (max-width : 480px) {
+    .project {
+        display: block;
+        width: 90vw;
+    }.project-image {
+        width: 90vw;
+    }
+    }

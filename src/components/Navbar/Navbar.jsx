@@ -7,6 +7,11 @@ import { Link } from "react-router-dom";
 
 export default function Navbar()
 {
+    const showNav = () => {
+        const jack = document.getElementsByClassName('nav-buttons')[0].style;
+        jack.display = jack.display == '' ? 'flex' : '';
+        console.log(jack.display == '')
+    }
     return (
         <div className="navbar">
             <div className="nav-vbar">
@@ -14,7 +19,7 @@ export default function Navbar()
                 <a href="https://github.com/Nevish-302"><img src={github} className="nav-image" /></a>
                 <a href="https://www.linkedin.com/in/shiven-upadhyay-9834bb100/"><img src={linkedin} className="nav-image" /></a>
             </div>
-        <div className="nav-logo text white">
+        <div className="nav-logo text white" onClick={showNav}>
             <img src={logo} className="nav-logo-image" /> 
             Shiven 
         </div>

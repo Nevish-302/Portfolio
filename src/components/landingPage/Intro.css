@@ -71,3 +71,47 @@
 .by{
     padding: .9rem;
 }
+@media (max-width : 480px) {
+    .intro-quote-box {
+        display: none;
+    }
+    #root {
+        padding: 3vw;
+    }
+    .intro-main {
+        display: block;
+        flex-direction: column;
+        width: 94vw;
+        justify-content: center;
+        
+    }
+    .head {
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+    }
+    .intro-head{
+        width: 90vw;
+    }
+    .intro-left {
+        text-align: justify;
+        padding: 0;
+        margin-right: 0;
+    }
+    .intro-left > .purple-box {
+        display: none;
+    }
+    .intro-desc {
+        width: 90vw;
+    }
+    .intro-box {
+        width: 90vw;
+        margin-left: 0;
+    }
+    .text 
+    {
+        font-size: .9rem;
+    }
+    .intro-image {
+        width: 90vw;
+    }
+}

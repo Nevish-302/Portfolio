@@ -33,3 +33,14 @@
     top: .2rem;
     height: 2rem;
 }
+@media (max-width : 480px) {
+    .footer{
+        width: 94vw;
+    }
+    .footer-desc {
+        display: none;
+    }
+    .footer-name{
+        display: none;
+    }
+}

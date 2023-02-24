@@ -14,3 +14,11 @@
 .skills-image {
     width: 30%;
 }
+@media (max-width : 480px) {
+.skills-image{
+    display: none;
+}
+.skills-box {
+    width: 90vw;
+}
+}

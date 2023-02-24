@@ -6,6 +6,7 @@
 .contacts-box {
     margin-top: 2rem;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -28,4 +29,12 @@
 .contact-logo {
     margin-right: .5rem;
     height: 2rem;
+}
+@media (max-width : 480px) {
+.lp-contacts {
+    width: 94vw;
+}
+.contact-list { 
+    margin-top: 2rem;
+}
 }

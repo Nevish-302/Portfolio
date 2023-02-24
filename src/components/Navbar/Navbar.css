@@ -40,3 +40,32 @@
     top: .5rem;
     height: 2rem;
 }
+@media (max-width : 480px) {
+.nav-logo-image{
+    height: 1.2rem;
+    top: 0.3rem;
+    text-align: left;
+    justify-content: left;
+}
+.nav-buttons {
+    flex-direction: column;
+    display: none;
+}
+.navbar{
+    flex-direction: column;
+    width: 90vw;
+    background-color: #282c33;
+    
+}
+.nav-vbar {
+    display: none;
+}
+.nav-button {
+    width: fit-content;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    margin-bottom: .1rem;
+    text-align: left;
+    
+}
+}
