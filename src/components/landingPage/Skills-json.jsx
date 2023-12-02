@@ -2,7 +2,7 @@ const Data = {
     data : [
     {
         name : 'Languages',
-        elements : ['Python', 'C', 'C++', 'JavaScript'],
+        elements : ['Python', 'C', 'C++', 'JavaScript', 'PHP'],
 
     },
     {
@@ -11,11 +11,11 @@ const Data = {
     },
     {
         name : 'Frameworks',
-        elements : ['Flask', 'React', 'NodeJS', 'Express.js', 'PHP'],
+        elements : ['Flask', 'React', 'MongoDB','NodeJS', 'Express.js', 'Laravel'],
     },
     {
         name : 'Other',
-        elements : ['HTML', 'CSS', 'Jinja'],
+        elements : ['HTML', 'CSS', 'Jinja', 'MQTT', 'OneSignal'],
     },
     {
         name : 'Tools',

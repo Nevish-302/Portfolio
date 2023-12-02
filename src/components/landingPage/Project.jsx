@@ -1,6 +1,7 @@
 import React from "react";
 import './Project1.css'
 import { Link } from "react-router-dom";
+
 export default function Project(props) 
 {
     const languages = props.data.lang.map(lan => `${lan} `)

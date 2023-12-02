@@ -1,36 +1,32 @@
+import img2 from '../../assets/images/Screenshot 2023-12-02 215727.png';
+import img1 from '../../assets/images/Screenshot 2023-12-02 215531.png';
+import img3 from '../../assets/images/Screenshot 2023-12-02 215653.png';
+
 const Data = {
     completeApps: [
         {
             name : 'Rockabuy',
             desc : 'Buying land on Moon',
             lang : ['HTML', 'CSS', 'ReactJS', 'NodeJS', 'MongoDB'],
-            url : 'rockabuy.vercel.app',
-            image :'',
+            url : 'https://rockabuy-rose.vercel.app/',
+            image :img1,
             code : 'https://github.com/Nevish-302/Rockabuy',
         },
         {
-            name : 'Tezuka',
-            desc : 'QR medical history',
+            name : 'Propmile Consulting',
+            desc : 'A freelance real-estate Project',
             lang : ['HTML', 'CSS', 'ReactJS', 'NodeJS', 'MongoDB'],
-            url : '',
-            image :'',
-            code : 'https://github.com/Nevish-302/Tezuka',
-        },
-        {
-            name:'amazon-clone',
-            desc:'Amazon Clone',
-            lang:['HTML', 'CSS', 'ReactJS', 'NodeJS', 'MongoDB'],
-            url:'',
-            code:'https://github.com/Nevish-302/amazon-clone',
-            image:'',
+            url : 'https://www.propmileconsulting.com/',
+            image :img2,
+            code : '',
         },
         {
             name:'GoResume',
+            desc:'Make and Share Resume By QR',
+            lang:['HTML', 'CSS', 'ReactJS', 'NodeJS', 'MongoDB'],
+            url:'https://goresume-ten.vercel.app/',
             code:'https://github.com/Nevish-302/GoResume',
-            desc:'Resume builder application',
-            lang:['HTML', 'CSS', 'ReactJS', 'NodeJS', 'Python','MongoDB'],
-            url:'',
-            image:'',
+            image:img3,
         },
         {
             name:'Animating Buttons',
