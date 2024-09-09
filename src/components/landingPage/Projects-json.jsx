@@ -5,7 +5,7 @@ import img4 from '../../assets/images/Screenshot 2024-09-09 at 6.18.54 AM.png'
 import img5 from '../../assets/images/routecraft.png';
 import img6 from '../../assets/images/Screenshot 2024-09-09 at 6.20.11 AM.png';
 import img7 from '../../assets/images/Screenshot 2024-09-09 at 6.49.15 AM.png';
-import img7 from '../../assets/images/Screenshot 2024-09-09 at 7.02.45 AM.png';
+import img8 from '../../assets/images/Screenshot 2024-09-09 at 7.02.45 AM.png';
 
 const Data = {
     completeApps: [
@@ -46,7 +46,7 @@ const Data = {
             desc : 'A Disaster Management System for SIH',
             lang : ['HTML', 'CSS', 'ReactJS', 'NodeJS', 'MongoDB'],
             url : '',
-            image :img7,
+            image :img8,
             code : 'https://github.com/Nevish-302/Jatayu',
         },
         {
