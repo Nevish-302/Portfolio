@@ -17,7 +17,7 @@ export default function About()
                 <div className="about-text text">
                     Hello, i'm Shiven!
                     <br /><br />
-                    I’m a self-taught full-stack developer based in Delhi, India. I can develop responsive websites and apis from scratch and raise them into modern user-friendly web experiences. 
+                    I’m a self-taught full-stack developer based in Delhi, India. I can develop responsive websites, Apps and apis from scratch and raise them into modern user-friendly web and android experiences. 
                     <br /><br />
                     Transforming my creativity and knowledge into a websites has been my passion for over a year.
                     I have participated in various hackathons while doing so. I always strive to learn about the newest technologies and frameworks.

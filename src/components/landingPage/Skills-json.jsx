@@ -11,7 +11,7 @@ const Data = {
     },
     {
         name : 'Frameworks',
-        elements : ['Flask', 'React', 'MongoDB','NodeJS', 'Express.js', 'Laravel'],
+        elements : [ 'Flutter','React', 'MongoDB','NodeJS', 'Flask', 'Express.js', 'Laravel'],
     },
     {
         name : 'Other',

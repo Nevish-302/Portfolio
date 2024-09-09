@@ -24,7 +24,7 @@ export default function Intro() {
                 <img src={dev} className="intro-image"/>
                 <div className="intro-box">
                     <div className="text grey-box">
-                    <img src={purple} className='intro-purple' /> Currently working on <span className="white"> Tezuka </span>
+                    <img src={purple} className='intro-purple' /> Currently working on <span className="white"> RouteCraft </span>
                     </div>
                 </div>
             </div>
