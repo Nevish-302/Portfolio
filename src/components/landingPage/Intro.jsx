@@ -3,6 +3,7 @@ import './Intro.css'
 import dev from '../../assets/images/Intro/intro-dev.png'
 import purple from '../../assets/images/Intro/purple.png'
 import quote from '../../assets/images/Intro/quote.png'
+import { Link } from "react-router-dom";
 
 export default function Intro() {
     return (
@@ -10,15 +11,15 @@ export default function Intro() {
             <div className="intro-main" >
             <div className="intro-left">
             <div className="intro-head head">
-                Shiven is a <span className="purple"> front-end developer </span> and <span className="purple"> back-end developer
+                Shiven is a <span className="purple"> full-stack web </span> and <span className="purple"> flutter developer
                 </span>
             </div>
             <div className="intro-desc text">
-                He crafts responsive websites where ideas come to life.
+                He crafts responsive websites and apps where ideas come to life.
             </div>
-            <button className="purple-box">
+            <Link to='/contacts'><button className="purple-box">
                 Contact me !!
-            </button>
+            </button></Link>
             </div>
             <div className="intro-right">
                 <img src={dev} className="intro-image"/>
