@@ -4,6 +4,7 @@ import github from '../../assets/images/Intro/Github.svg'
 import linkedin from '../../assets/images/Intro/Linkedin.png'
 import logo from '../../assets/images/logi-white.png'
 import { Link } from "react-router-dom";
+import resume from "../../assets/resume.pdf"
 
 export default function Navbar()
 {
@@ -28,6 +29,7 @@ export default function Navbar()
             <Link to='/projects'><div className="nav-button text"><span className="purple">#</span>works</div></Link>
             <Link to='/about'><div className="nav-button text"><span className="purple">#</span>about-me</div></Link>
             <Link to='/contacts'><div className="nav-button text"><span className="purple">#</span>contact</div></Link>
+            <a href={resume} download><div className="nav-button text"><span className="purple">#</span>resume</div></a>
         </div>
         </div>
     )
