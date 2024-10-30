@@ -20,7 +20,7 @@ export default function Footer()
                 scrub: 2,
                 start: "top 90%",
                 end: "top 80%",
-                markers: true,
+                // markers: true,
             }
         })
         
