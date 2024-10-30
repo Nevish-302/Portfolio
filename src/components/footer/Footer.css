@@ -1,0 +1,48 @@
+.footer {
+    position: relative;
+    margin-top: auto;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.footer-about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    justify-content: left;
+    margin-right: auto;
+    width: 30rem;
+}
+.HR {
+    margin-top: 5rem;
+    width: 100%;
+}
+.copyright {
+    text-align: center;
+}
+.footer-name {
+    margin-bottom: .5rem;
+}
+.foot-email {
+    position: relative;
+    font-size: .8rem;
+    top:-1rem;
+}
+.footer-logo-image {
+    position: relative;
+    top: .2rem;
+    padding-right: 1rem;
+    height: 2rem;
+}
+@media (max-width : 480px) {
+    .footer{
+        width: 94vw;
+    }
+    .footer-desc {
+        display: none;
+    }
+    .footer-name{
+        display: none;
+    }
+}

@@ -1,0 +1,24 @@
+.projects {
+    padding-top: 5rem;
+}
+
+.main-project-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content:space-between;
+}
+.lisp {
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+.mini-head {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+@media (max-width : 480px) {
+.projects {
+    display: block;
+}
+}

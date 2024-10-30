@@ -1,0 +1,40 @@
+.lp-contacts {
+    margin-top: 5rem;
+    text-align: left;
+
+}
+.contacts-box {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contact-list {
+    display: flex;
+    flex-direction: column;
+}
+.contact {
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.contacts-text {
+    width: 30rem;
+}
+.contacts-contact{
+    line-height: 2rem;
+}
+.contact-logo {
+    margin-right: .5rem;
+    height: 2rem;
+}
+@media (max-width : 480px) {
+.lp-contacts {
+    width: 94vw;
+}
+.contact-list { 
+    margin-top: 2rem;
+}
+}

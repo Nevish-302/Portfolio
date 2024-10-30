@@ -1,0 +1,11 @@
+.about > .lp-about > .heading > .line
+{
+    display: none;
+}
+.about > .lp-skills > .heading > .line
+{
+    display: none;
+}
+.about {
+    padding-top:5rem;
+}

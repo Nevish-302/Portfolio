@@ -1,0 +1,124 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin:0;    
+    padding-top:5rem;
+}
+.intro-main {    
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.intro-head {
+    margin-bottom: 2rem;
+}
+.intro-desc {
+    margin-bottom: 1rem;
+}
+.intro-left {
+    width: 50%;
+    line-height: 2rem;
+    margin-top: 5rem;
+    text-align: left;
+}
+.intro-right {
+    width: 50%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+.intro-box {
+    width: fit-content;
+    margin-left: 2rem;
+    margin-top: 0rem;
+}
+.intro-purple {
+    height: .8rem;
+}
+.intro-image {
+    width: 30rem;
+    display: block;
+
+}
+.quote {
+ font-weight: 300;
+ font-size: 1.5rem;
+ width: fit-content;
+ margin-left: auto;
+ margin-right: 0;
+ padding: 1.5rem;
+}
+.splitQuote {
+    display: inline-block;
+    min-width: 4px;
+}
+.intro-quote-box
+{
+    width: 80%;
+    margin: auto;
+    margin-top: 5rem;
+}
+.quote-up {
+    position: relative;
+    height: 2rem;
+    float: left;
+    top:-2.5rem;
+    background-color: #282C33;
+}
+.quote-down {
+    position: relative;
+    float: right;
+    height: 2rem;
+    bottom: -.5rem;
+    background-color: #282C33;
+}
+.by{
+    padding: .9rem;
+}
+@media (max-width : 480px) {
+    .intro-quote-box {
+        display: none;
+    }
+    #root {
+        padding: 3vw;
+    }
+    .intro-main {
+        display: block;
+        flex-direction: column;
+        width: 94vw;
+        justify-content: center;
+        
+    }
+    .head {
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+    }
+    .intro-head{
+        width: 90vw;
+    }
+    .intro-left {
+        text-align: justify;
+        padding: 0;
+        margin-right: 0;
+    }
+    .intro-left > .purple-box {
+        display: none;
+    }
+    .intro-desc {
+        width: 90vw;
+    }
+    .intro-box {
+        width: 90vw;
+        margin-left: 0;
+    }
+    .text 
+    {
+        font-size: .9rem;
+    }
+    .intro-image {
+        width: 90vw;
+    }
+}

@@ -1,0 +1,19 @@
+.lp-projects {
+    margin-top: 5rem;
+}
+
+.project-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: space-around;
+}
+@media (max-width : 480px) {
+    .lp-projects {
+        display: block;
+        width: 94vw;
+    }
+    .line {
+        display: none;
+    }
+    }

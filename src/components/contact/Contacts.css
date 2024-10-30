@@ -1,0 +1,37 @@
+.lp-contacts {
+    margin-top: 5rem;
+    text-align: left;
+
+}
+.contacts {
+    height: 60vh;
+    /* width: 60vw; */
+    padding-top: 5rem;
+    margin-left: 0;
+}
+.contacts-box {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contact-list {
+    display: flex;
+    flex-direction: column;
+}
+.contact {
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.contacts-text {
+    width: 30rem;
+}
+.contacts-contact{
+    line-height: 2rem;
+}
+.contact-logo {
+    margin-right: .5rem;
+    height: 2rem;
+}
