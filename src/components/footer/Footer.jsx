@@ -14,14 +14,14 @@ export default function Footer()
             x: 1000,
             duration: 1,
             opacity : 0,
-            scrollTrigger : {
-                trigger: '.footer',
-                scroller: "body",
-                scrub: 2,
-                start: "top 90%",
-                end: "top 80%",
-                // markers: true,
-            }
+            // scrollTrigger : {
+            //     trigger: '.footer',
+            //     scroller: "body",
+            //     scrub: 2,
+            //     start: "top 90%",
+            //     end: "top 80%",
+            //     // markers: true,
+            // }
         })
         
     }
