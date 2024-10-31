@@ -4,9 +4,40 @@ import github from '../../assets/images/Intro/Github.svg'
 import discord from '../../assets/images/Intro/Discord.png'
 import email from '../../assets/images/Intro/Email.png'
 import linkedin from '../../assets/images/Intro/Linkedin.png'
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 export default function Contacts() 
 {
+    useGSAP(()=>{
+        gsap.from('.contacts .heading', {
+            x: 1000,
+            duration: 1,
+            opacity : 0,
+            // scrollTrigger : {
+            //     trigger: '.contacts',
+            //     scroller: "body",
+            //     scrub: 2,
+            //     start: "top 90%",
+            //     end: "top 50%",
+            //     // markers: true,
+            // }
+        })
+        gsap.from('.contacts .contacts-box', {
+            x: -1000,
+            duration: 1,
+            opacity : 0,
+            // scrollTrigger : {
+            //     trigger: '.lp-contacts',
+            //     scroller: "body",
+            //     scrub: 2,
+            //     start: "top 80%",
+            //     end: "top 40%",
+            //     // pin : true,
+            //     // markers: true,
+            // }
+        })
+    })
     return (
         
         <div className="contacts ">
