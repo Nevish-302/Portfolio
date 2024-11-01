@@ -12,6 +12,8 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Skills() 
 {
     useGSAP(()=>{
+                let mediaAnimation = gsap.matchMedia()
+
         gsap.from('.lp-skills .heading', {
             x: 1000,
             duration: 1,

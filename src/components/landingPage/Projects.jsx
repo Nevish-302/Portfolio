@@ -14,32 +14,64 @@ export default function Projects()
 {
     const contextt = useRef()
     useGSAP(()=>{
-        gsap.from('.lp-projects .heading', {
-            x: 1000,
-            duration: 1,
-            opacity : 0,
-            scrollTrigger : {
-                trigger: '.lp-projects',
-                scroller: "body",
-                scrub: 2,
-                start: "top 90%",
-                end: "top 50%",
-                // markers: true,
-            }
+        let mediaAnimation = gsap.matchMedia()
+        mediaAnimation.add('(min-width: 500px)', () => {
+            gsap.from('.lp-projects .heading', {
+                x: 1000,
+                duration: 1,
+                opacity : 0,
+                scrollTrigger : {
+                    trigger: '.lp-projects',
+                    scroller: "body",
+                    scrub: 2,
+                    start: "top 90%",
+                    end: "top 50%",
+                    // markers: true,
+                }
+            })
+            gsap.from('.lp-projects .project-box', {
+                x: -1000,
+                duration: 1,
+                opacity : 0,
+                scrollTrigger : {
+                    trigger: '.lp-projects',
+                    scroller: "body",
+                    scrub: 2,
+                    start: "top 80%",
+                    end: "top 40%",
+                    // pin : true,
+                    // markers: true,
+                }
+            })
         })
-        gsap.from('.lp-projects .project-box', {
-            x: -1000,
-            duration: 1,
-            opacity : 0,
-            scrollTrigger : {
-                trigger: '.lp-projects',
-                scroller: "body",
-                scrub: 2,
-                start: "top 80%",
-                end: "top 40%",
-                // pin : true,
-                // markers: true,
-            }
+        mediaAnimation.add('(max-width: 500px)', () => {
+            gsap.from('.lp-projects .heading', {
+                x: 1000,
+                duration: 1,
+                opacity : 0,
+                // scrollTrigger : {
+                    trigger: '.lp-projects',
+                    scroller: "body",
+                    scrub: 2,
+                    start: "top 10%",
+                    end: "top 20%",
+                    // markers: true,
+                // }
+            })
+            gsap.from('.lp-projects .project-box', {
+                x: -1000,
+                duration: 1,
+                opacity : 0,
+                // scrollTrigger : {
+                //     trigger: '.lp-projects',
+                //     scroller: "body",
+                //     scrub: 2,
+                //     start: "top 80%",
+                //     end: "top 40%",
+                //     // pin : true,
+                //     // markers: true,
+                // }
+            })
         })
     })
     const projects = [< Project data = {Data.completeApps[0]} />, < Project data = {Data.completeApps[1]} />, < Project data = {Data.completeApps[2]} />]
