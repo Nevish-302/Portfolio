@@ -25,7 +25,23 @@ export default function Projects()
             //     // markers: true,
             // }
         })
-        gsap.from(' .main-project-box , .projHead', {
+        gsap.from('.main-project-box .project', {
+            // x: -1000,
+            duration: .5,
+            opacity : 0,
+            scale: 3,
+            stagger:.3,
+            // scrollTrigger : {
+            //     trigger: '.lp-projects',
+            //     scroller: "body",
+            //     scrub: 2,
+            //     start: "top 80%",
+            //     end: "top 40%",
+            //     // pin : true,
+            //     // markers: true,
+            // }
+        })
+        gsap.from(' .projHead', {
             x: -1000,
             duration: 1,
             opacity : 0,

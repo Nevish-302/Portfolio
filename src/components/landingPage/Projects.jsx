@@ -29,10 +29,31 @@ export default function Projects()
                     // markers: true,
                 }
             })
-            gsap.from('.lp-projects .project-box', {
+            gsap.from('.lp-projects .heading .line', {
+                x: -1000,
+                // y: -200,
+                duration: 1,
+                // height:'50vh',
+                // borderRadius: "100%",
+                width: 0,
+                background: 'white',
+                border: '1px solid white',
+                // opacity : 0,
+                ease:"back.out(1.7)",
+                scrollTrigger : {
+                    trigger: '.lp-projects',
+                    scroller: "body",
+                    scrub: 2,
+                    start: "top 30%",
+                    end: "top 40%",
+                    // markers: true,
+                }
+            })
+            gsap.from('.lp-projects .project-box .project', {
                 x: -1000,
                 duration: 1,
                 opacity : 0,
+                stagger:1,
                 scrollTrigger : {
                     trigger: '.lp-projects',
                     scroller: "body",

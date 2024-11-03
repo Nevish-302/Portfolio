@@ -10,32 +10,103 @@ gsap.registerPlugin(ScrollTrigger);
 export default function About() 
 {
     useGSAP(()=>{
-        gsap.from('.lp-about .heading', {
-            x: 1000,
-            duration: 1,
-            opacity : 0,
-            scrollTrigger : {
-                trigger: '.lp-about',
-                scroller: "body",
-                scrub: 2,
-                start: "top 90%",
-                end: "top 50%",
-                // markers: true,
-            }
+        let mediaAnimation = gsap.matchMedia()
+        mediaAnimation.add('(min-width:500px)', ()=>{
+            gsap.from('.lp-about .heading .title', {
+                // x: 1000,
+                scale:2,
+                duration: 1,
+                opacity : 0,
+                scrollTrigger : {
+                    trigger: '.lp-about',
+                    scroller: "body",
+                    scrub: 2,
+                    start: "top 90%",
+                    end: "top 50%",
+                }
+            })
+            gsap.from('.lp-about .heading .line', {
+                x: -1000,
+                // y: -200,
+                duration: 1,
+                // height:'50vh',
+                // borderRadius: "100%",
+                width: 0,
+                background: 'white',
+                border: '1px solid white',
+                // opacity : 0,
+                ease:"back.out(1.7)",
+                scrollTrigger : {
+                    trigger: '.lp-about',
+                    scroller: "body",
+                    scrub: 2,
+                    start: "top 30%",
+                    end: "top 40%",
+                    // : true,
+                }
+            })
+            // gsap.from('.lp-about .about-image', { 
+            //     x: 200,
+            //     // rotateZ: 360,
+            //     duration: 2,
+            //      repeat: -1,
+            //       yoyo: true,
+            //       ease: "circ.out",
+            
+            // })
+            gsap.from('.lp-about .about-main', {
+                x: -1000,
+                duration: 1,
+                // letterSpacing: "5px",
+                opacity : 0,
+                scrollTrigger : {
+                    trigger: '.lp-about',
+                    scroller: "body",
+                    scrub: 2,
+                    start: "top 80%",
+                    end: "top 40%",
+                    // pin : true,
+                    // : true,   
+                }
+            })    
         })
-        gsap.from('.lp-about .about-main', {
-            x: -1000,
-            duration: 1,
-            opacity : 0,
-            scrollTrigger : {
-                trigger: '.lp-about',
-                scroller: "body",
-                scrub: 2,
-                start: "top 80%",
-                end: "top 40%",
-                // pin : true,
-                // markers: true,   
-            }
+        mediaAnimation.add('(max-width: 500px)', ()=>{
+            gsap.from('.lp-about .heading .title', {
+                // x: 1000,
+                scale:2,
+                duration: 1,
+                opacity : 0,
+                
+            })
+            gsap.from('.lp-about .heading .line', {
+                x: -1000,
+                // y: -200,
+                duration: 1,
+                // height:'50vh',
+                // borderRadius: "100%",
+                width: 0,
+                background: 'white',
+                border: '1px solid white',
+                // opacity : 0,
+                ease:"back.out(1.7)",
+                
+            })
+            // gsap.from('.lp-about .about-image', { 
+            //     x: 200,
+            //     // rotateZ: 360,
+            //     duration: 2,
+            //      repeat: -1,
+            //       yoyo: true,
+            //       ease: "circ.out",
+            
+            // })
+            gsap.from('.lp-about .about-main', {
+                x: -1000,
+                duration: 1,
+                // letterSpacing: "5px",
+                opacity : 0,
+                
+            })
         })
     })
     return (

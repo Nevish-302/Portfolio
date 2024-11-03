@@ -20,7 +20,6 @@ export default function Footer()
             //     scrub: 2,
             //     start: "top 90%",
             //     end: "top 80%",
-            //     // markers: true,
             // }
         })
         
@@ -38,7 +37,9 @@ export default function Footer()
                     full-stack web and flutter developer based in India.
                 </div>
             </div>
-            <div className="copyright text white">© Copyright 2022. Made by Shiven. Designed by <a href="https://www.figma.com/community/file/1164933568884615740" >Elias</a>.</div>
+            <div className="copyright text white">© Copyright 2022. Made by Shiven.
+                 {/* Designed by <a href="https://www.figma.com/community/file/1164933568884615740" >Elias</a>. */}
+                 </div>
         </div>
         
     )

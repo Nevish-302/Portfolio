@@ -12,7 +12,9 @@ export default function Contacts()
     useGSAP(()=>{
         gsap.from('.contacts .heading', {
             x: 1000,
-            duration: 1,
+            // letterSpacing: "1000px",
+            duration: .8,
+            ease: "back.out(1.5)",
             opacity : 0,
             // scrollTrigger : {
             //     trigger: '.contacts',
@@ -20,13 +22,15 @@ export default function Contacts()
             //     scrub: 2,
             //     start: "top 90%",
             //     end: "top 50%",
-            //     // markers: true,
             // }
         })
-        gsap.from('.contacts .contacts-box', {
+        
+        gsap.from('.contacts .contacts-text', {
             x: -1000,
             duration: 1,
             opacity : 0,
+            letterSpacing: "1000px",
+
             // scrollTrigger : {
             //     trigger: '.lp-contacts',
             //     scroller: "body",
@@ -34,8 +38,31 @@ export default function Contacts()
             //     start: "top 80%",
             //     end: "top 40%",
             //     // pin : true,
-            //     // markers: true,
             // }
+        })
+        gsap.from('.contacts .contact-list ', {
+            x: -300,
+            scale: 4,
+            backgroundColor: "black",
+            duration: 1,
+            opacity : 0,
+            border: "0px solid purple",
+            // scrollTrigger : {
+                //     trigger: '.lp-contacts',
+                //     scroller: "body",
+                //     scrub: 2,
+                //     start: "top 80%",
+                //     end: "top 40%",
+                //     // pin : true,
+                // }
+            })
+            gsap.from('.contacts .contact', {
+                scale: 2,
+                delay:1,
+            stagger:.3,
+            opacity: 0,
+            // borderLeft: "0px solid red",
+            
         })
     })
     return (

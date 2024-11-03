@@ -76,11 +76,11 @@ export default function Navbar()
             Shiven 
         </div>
         <div className="nav-buttons">
-            <Link to=''><div className="nav-button text"><span className="purple">#</span>home</div></Link>
-            <Link to='/projects'><div className="nav-button text"><span className="purple">#</span>works</div></Link>
-            <Link to='/about'><div className="nav-button text"><span className="purple">#</span>about-me</div></Link>
-            <Link to='/contacts'><div className="nav-button text"><span className="purple">#</span>contact</div></Link>
-            <a href={resume} download><div className="nav-button text"><span className="purple">#</span>resume</div></a>
+            <Link to='/'><div className="nav-button text" onClick={showNav} ><span className="purple">#</span>home</div></Link>
+            <Link to='/projects'><div className="nav-button text" onClick={showNav}><span className="purple">#</span>works</div></Link>
+            <Link to='/about'><div className="nav-button text" onClick={showNav}><span className="purple">#</span>about-me</div></Link>
+            <Link to='/contacts'><div className="nav-button text" onClick={showNav}><span className="purple">#</span>contact</div></Link>
+            <a href={resume} download><div className="nav-button text" onClick={showNav}><span className="purple">#</span>resume</div></a>
         </div>
         </div>
     )

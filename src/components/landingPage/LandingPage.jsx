@@ -14,6 +14,10 @@ import { useGSAP } from "@gsap/react";
 export default function LandingPage ()
 {
     useGSAP(()=>{
+
+        gsap.from('.heading .purple, .contact-list .purple', {color: "white", duration: 1, repeat: -1, yoyo:1})
+
+
         var tlLanding = gsap.timeline()
 
         tlLanding.from('.intro-left', {

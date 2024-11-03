@@ -13,6 +13,8 @@
 }
 .skills-image {
     width: 30%;
+    /* opacity: 1; */
+    /* display: inline-block; */
 }
 @media (max-width : 480px) {
 .skills-image{

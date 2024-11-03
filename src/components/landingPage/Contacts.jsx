@@ -14,8 +14,8 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Contacts() 
 {
     useGSAP(()=>{
-        gsap.from('.lp-contacts .heading', {
-            x: 1000,
+        gsap.from('.lp-contacts .heading .title', {
+            scale: 2,
             duration: 1,
             opacity : 0,
             scrollTrigger : {
@@ -27,7 +27,42 @@ export default function Contacts()
                 // markers: true,
             }
         })
-        gsap.from('.lp-contacts .contacts-box', {
+        gsap.from('.lp-contacts .heading .line', {
+            x: -1000,
+            // y: -200,
+            duration: 1,
+            // height:'50vh',
+            // borderRadius: "100%",
+            width: 0,
+            background: 'white',
+            border: '1px solid white',
+            // opacity : 0,
+            ease:"back.out(1.7)",
+            scrollTrigger : {
+                trigger: '.lp-contacts',
+                scroller: "body",
+                scrub: 2,
+                start: "top 55%",
+                end: "top 40%",
+                // markers: true,
+            }
+        })
+        gsap.from('.lp-contacts .contact', {
+            scale: 2,
+            stagger:1,
+            opacity: 0,
+            // borderLeft: "0px solid red",
+            scrollTrigger : {
+                trigger: '.lp-contacts',
+                scroller: "body",
+                scrub: 2,
+                start: "top 80%",
+                end: "top 50%",
+                // pin : true,
+                // markers: true,
+            },
+        })
+        gsap.from('.lp-contacts .contacts-box .contacts-text', {
             x: -1000,
             duration: 1,
             opacity : 0,
@@ -55,7 +90,7 @@ export default function Contacts()
                 I’m interested in freelance and internship opportunities. However, if you have other request or question, don’t hesitate to contact me.
                 </div>    
                 <div className="contact-list grey-box text">
-                    <div className="white">
+                    <div className="purple">
                         Contact me here
                     </div>
                     <div className="contact">
